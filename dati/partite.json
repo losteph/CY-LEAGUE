@@ -33,9 +33,9 @@
     "giornata": 2,
     "squadraCasa": "I Bomber",
     "squadraOspite": "Centrocampo Forte",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare",
+    "golCasa": 0,
+    "golOspite": 0,
+    "status": "giocata",
     "vincitoreShootout": null,
     "data": "Sab 22/11", "ora": "18:00"
   },
