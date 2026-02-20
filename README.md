@@ -1,6 +1,6 @@
 # 🏆 CY League - Official Repository
 
-Benvenuti nella repository ufficiale della **CY League** (Calcio Young), il torneo di calcio a 7 (6+1) ispirato al formato Kings League, giocato interamente presso il **Greenpark**.
+Benvenuti nella repository ufficiale della **Young Cup**, il torneo di calcio a 7 (6+1) ispirato al formato Kings League.
 
 Questa repository funge da database centrale per i risultati, il calendario degli incontri e le classifiche aggiornate del campionato e del FantaCalcio.
 
