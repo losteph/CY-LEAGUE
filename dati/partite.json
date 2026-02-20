@@ -3,41 +3,41 @@
   "giornata": 1,
   "squadraCasa": "I Titanici",
   "squadraOspite": "I Bomber",
-  "golCasa": 2,
-  "golOspite": 2,
-  "status": "giocata",
-  "vincitoreShootout": "I Titanici", 
-  "data": "Sab 15/11", "ora": "18:00"
+  "golCasa": null,
+  "golOspite": null,
+  "status": "da giocare",
+  "vincitoreShootout": null, 
+  "data": "fine marzo", "ora": "!"
   },
   {
     "giornata": 1,
     "squadraCasa": "I Gladiatori",
     "squadraOspite": "L'Equilibrio",
-    "golCasa": 1,
-    "golOspite": 1,
-    "status": "giocata",
-    "vincitoreShootout": "I Gladiatori", 
-    "data": "Sab 15/11", "ora": "19:00"
+    "golCasa": null,
+    "golOspite": null,
+    "status": "da giocare",
+    "vincitoreShootout": null, 
+    "data": "fine marzo", "ora": "!"
   },
   {
     "giornata": 1,
     "squadraCasa": "Real Scommessa",
     "squadraOspite": "Centrocampo Forte",
-    "golCasa": 1,
-    "golOspite": 2,
-    "status": "giocata",
+    "golCasa": null,
+    "golOspite": null,
+    "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "Sab 15/11", "ora": "20:00"
+    "data": "fine marzo", "ora": "!"
   },
   {
     "giornata": 2,
     "squadraCasa": "I Bomber",
     "squadraOspite": "Centrocampo Forte",
-    "golCasa": 0,
-    "golOspite": 0,
-    "status": "giocata",
+    "golCasa": null,
+    "golOspite": null,
+    "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "Sab 22/11", "ora": "18:00"
+    "data": "aprile", "ora": "!"
   },
   {
     "giornata": 2,
@@ -47,7 +47,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "Sab 22/11", "ora": "19:00"
+    "data": "aprile", "ora": "!"
   },
   {
     "giornata": 2,
@@ -57,7 +57,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "Sab 22/11", "ora": "20:00"
+    "data": "aprile", "ora": "!"
   },
   {
     "giornata": 3,
@@ -67,7 +67,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "Sab 29/11", "ora": "18:00"
+    "data": "maggio", "ora": "!"
   },
   {
     "giornata": 3,
@@ -77,7 +77,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "Sab 29/11", "ora": "19:00"
+    "data": "maggio", "ora": "!"
   },
   {
     "giornata": 3,
@@ -87,7 +87,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "Sab 29/11", "ora": "20:00"
+    "data": "maggio", "ora": "!"
   },
   {
     "giornata": 4,
@@ -97,7 +97,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "Sab 06/12", "ora": "18:00"
+    "data": "giugno", "ora": "!"
   },
   {
     "giornata": 4,
@@ -107,7 +107,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "Sab 06/12", "ora": "19:00"
+    "data": "giugno", "ora": "!"
   },
   {
     "giornata": 4,
@@ -117,7 +117,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "Sab 06/12", "ora": "20:00"
+    "data": "giugno", "ora": "!"
   },
   {
     "giornata": 5,
@@ -127,7 +127,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "Sab 13/12", "ora": "18:00"
+    "data": "luglio", "ora": "!"
   },
   {
     "giornata": 5,
@@ -137,7 +137,7 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "Sab 13/12", "ora": "19:00"
+    "data": "luglio", "ora": "!"
   },
   {
     "giornata": 5,
@@ -147,6 +147,6 @@
     "golOspite": null,
     "status": "da giocare",
     "vincitoreShootout": null,
-    "data": "Sab 13/12", "ora": "20:00"
+    "data": "luglio", "ora": "!"
   }
 ]
