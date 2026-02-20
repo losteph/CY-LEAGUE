@@ -1,12 +1,13 @@
 [
   {
-    "giornata": 1,
-    "squadraCasa": "I Titanici",
-    "squadraOspite": "I Bomber",
-    "golCasa": 2,
-    "golOspite": 1,
-    "status": "giocata",
-    "data": "Sab 15/11", "ora": "18:00"
+  "giornata": 1,
+  "squadraCasa": "I Titanici",
+  "squadraOspite": "I Bomber",
+  "golCasa": 2,
+  "golOspite": 2,
+  "status": "giocata",
+  "vincitoreShootout": "I Titanici", 
+  "data": "Sab 15/11", "ora": "18:00"
   },
   {
     "giornata": 1,
@@ -15,15 +16,16 @@
     "golCasa": 1,
     "golOspite": 1,
     "status": "giocata",
+    "vincitoreShootout": "I Gladiatori", 
     "data": "Sab 15/11", "ora": "19:00"
   },
   {
     "giornata": 1,
     "squadraCasa": "Real Scommessa",
     "squadraOspite": "Centrocampo Forte",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare",
+    "golCasa": 1,
+    "golOspite": 2,
+    "status": "giocata",
     "data": "Sab 15/11", "ora": "20:00"
   },
   {
