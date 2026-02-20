@@ -1,4 +1,4 @@
-# 🏆 CY League - Official Repository
+# 🏆 Young Cup - Official Repository
 
 Benvenuti nella repository ufficiale della **Young Cup**, il torneo di calcio a 7 (6+1) ispirato al formato Kings League.
 
