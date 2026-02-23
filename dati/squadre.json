@@ -1,6 +1,7 @@
 [
   {
     "nome": "I Titanici",
+    "presidente": "Gianni Gianni",
     "rosa": [
       { "nome": "Marco Donati", "ruolo": "Portiere" },
       { "nome": "Luca Costa", "ruolo": "Difensore" },
@@ -14,6 +15,7 @@
   },
   {
     "nome": "I Gladiatori",
+    "presidente": "Gianni Gianni",
     "rosa": [
       { "nome": "Alessandro Ferrari", "ruolo": "Portiere" },
       { "nome": "Stefano Conti", "ruolo": "Difensore" },
@@ -27,6 +29,7 @@
   },
   {
     "nome": "Real Scommessa",
+    "presidente": "Gianni Gianni",
     "rosa": [
       { "nome": "Daniele Leone", "ruolo": "Portiere" },
       { "nome": "Lorenzo Martino", "ruolo": "Difensore" },
@@ -40,6 +43,7 @@
   },
   {
     "nome": "Centrocampo Forte",
+    "presidente": "Gianni Gianni",
     "rosa": [
       { "nome": "Federico Gatti", "ruolo": "Portiere" },
       { "nome": "Giorgio Farina", "ruolo": "Difensore" },
@@ -53,6 +57,7 @@
   },
   {
     "nome": "L'Equilibrio",
+    "presidente": "Gianni Gianni",
     "rosa": [
       { "nome": "Francesco Caputo", "ruolo": "Portiere" },
       { "nome": "Marco Silvestri", "ruolo": "Portiere" },
@@ -66,6 +71,7 @@
   },
   {
     "nome": "I Bomber",
+    "presidente": "Gianni Gianni",
     "rosa": [
       { "nome": "Federico Marchetti", "ruolo": "Portiere" },
       { "nome": "Matteo Rinaldi", "ruolo": "Difensore" },
