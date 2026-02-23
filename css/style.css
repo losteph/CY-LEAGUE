@@ -241,6 +241,26 @@ table tbody td:nth-child(3) {
     display: inline-block;
 }
 
+/* Stile per il Logo nell'Header */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Spazio tra logo e titolo */
+    padding-bottom: 10px;
+}
+
+.logo-img {
+    max-height: 70px; /* Regola l'altezza come preferisci */
+    width: auto;
+    border-radius: 50%; /* Rende il logo circolare se l'immagine è quadrata */
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+    }
+}
 
 /* --- INIZIO STILI RESPONSIVE PER MOBILE --- */
 
@@ -274,6 +294,7 @@ table tbody td:nth-child(3) {
     nav a:last-child {
         border-bottom: none;
     }
+    
 
     /* ----- LA PARTE PIÙ IMPORTANTE: Le Tabelle ----- */
     /* Le tabelle (Classifica e Marcatori) sono troppo larghe.
