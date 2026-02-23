@@ -17,9 +17,15 @@ async function caricaSquadre() {
             });
             giocatoriHtml += '</ul>';
 
+            // Costruiamo l'HTML includendo il Presidente
             const squadraHtml = `
                 <div class="squadra-card">
                     <h3>${squadra.nome}</h3>
+                    <div class="presidente-box">
+                        <span class="label-presidente">Presidente:</span>
+                        <span class="nome-presidente">${squadra.presidente || 'N.D.'}</span>
+                    </div>
+                    <div class="rosa-header">Rosa Giocatori</div>
                     ${giocatoriHtml}
                 </div>
             `;
@@ -27,6 +33,5 @@ async function caricaSquadre() {
         });
     } catch (error) {
         console.error("Errore nel caricamento delle squadre:", error);
-        document.getElementById('elenco-squadre').innerHTML = '<p>Errore nel caricamento dati.</p>';
     }
 }
