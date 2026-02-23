@@ -186,6 +186,39 @@ table tbody td:nth-child(3) {
     float: right;
 }
 
+/* Stile per la sezione Presidente nella card squadra */
+.presidente-box {
+    background-color: #f0f4f8; /* Un azzurro molto chiaro */
+    padding: 10px 15px;
+    border-left: 4px solid #0a2f5c; /* Barretta laterale blu scuro */
+    margin: 10px 15px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label-presidente {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #0a2f5c;
+    font-weight: bold;
+}
+
+.nome-presidente {
+    font-weight: 600;
+    color: #333;
+}
+
+.rosa-header {
+    padding: 10px 20px 0 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 /* Stile Legenda Classifica */
 .legenda {
     margin-top: 30px;
