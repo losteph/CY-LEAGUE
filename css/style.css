@@ -252,7 +252,7 @@ table tbody td:nth-child(3) {
 
 
 .logo-img {
-    max-height: 120x; /* Aumentato per sostituire degnamente il titolo */
+    max-height: 100x; /* Aumentato per sostituire degnamente il titolo */
     width: auto;
     object-fit: contain;
     display: block;
@@ -308,8 +308,8 @@ table tbody td:nth-child(3) {
 
 /* Assicuriamoci che i mini-logo siano consistenti ovunque */
 .mini-logo {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
     flex-shrink: 0;
 }
@@ -324,8 +324,8 @@ table tbody td:nth-child(3) {
 
 /* Logo piccolissimo per Classifica e Marcatori */
 .mini-logo {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
     flex-shrink: 0;
     border-radius: 50%; /* Opzionale: li rende tondi */
@@ -357,8 +357,8 @@ table tbody td:nth-child(3) {
 
 /* Aumenta leggermente i loghi solo nella sezione Partite */
 .match-team .mini-logo {
-    width: 31px;  /* Prima era 18px, ora è un po' più visibile */
-    height: 31px;
+    width: 40px;  /* Prima era 18px, ora è un po' più visibile */
+    height: 40px;
 }
 
 
