@@ -262,6 +262,84 @@ table tbody td:nth-child(3) {
     }
 }
 
+/* Allineamento specifico per i loghi nelle partite */
+.match-team {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.team-casa {
+    justify-content: flex-end; /* Nome a sinistra, logo a destra (vicino al risultato) */
+    text-align: right;
+}
+
+.team-ospite {
+    justify-content: flex-start; /* Logo a sinistra, nome a destra (vicino al risultato) */
+    text-align: left;
+}
+
+/* Stile per la scritta shootout sotto il risultato */
+.shootout-info {
+    font-size: 0.7em;
+    color: #e67e22;
+    font-weight: normal;
+    margin-top: 4px;
+    white-space: nowrap;
+}
+
+/* Assicuriamoci che i mini-logo siano consistenti ovunque */
+.mini-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+/* Container per logo + nome nelle tabelle */
+.tabella-squadra-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Logo piccolissimo per Classifica e Marcatori */
+.mini-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 50%; /* Opzionale: li rende tondi */
+    background: #fff;   /* Opzionale: dà uno sfondo bianco se il logo è scuro */
+}
+
+/* Header della card squadra */
+.squadra-header-logo {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+/* Logo medio per la card squadra */
+.logo-squadra-card {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.squadra-header-logo h3 {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+
+
+
 /* --- INIZIO STILI RESPONSIVE PER MOBILE --- */
 
 @media (max-width: 600px) {
