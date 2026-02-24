@@ -259,7 +259,7 @@ table tbody td:nth-child(3) {
 }
 
 .header-content {
-    padding: 5px 0; /* Riduce lo spazio verticale ora che non c'è il testo */
+    padding: 10px 0; /* Riduce lo spazio verticale ora che non c'è il testo */
     display: block;  /* Cambiato da flex a block per centratura semplice */
     text-align: center;
 }
