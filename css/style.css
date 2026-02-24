@@ -251,8 +251,9 @@ table tbody td:nth-child(3) {
 }
 
 .logo-img {
-    max-height: 70px; /* Regola l'altezza come preferisci */
+    max-height: 45px; /* Regola l'altezza come preferisci */
     width: auto;
+    object-fit: contain;
     border-radius: 50%; /* Rende il logo circolare se l'immagine è quadrata */
 }
 
@@ -266,7 +267,7 @@ table tbody td:nth-child(3) {
 .match-team {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     font-weight: bold;
 }
 
@@ -291,8 +292,8 @@ table tbody td:nth-child(3) {
 
 /* Assicuriamoci che i mini-logo siano consistenti ovunque */
 .mini-logo {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     object-fit: contain;
     flex-shrink: 0;
 }
@@ -302,14 +303,15 @@ table tbody td:nth-child(3) {
 .tabella-squadra-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 /* Logo piccolissimo per Classifica e Marcatori */
 .mini-logo {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     object-fit: contain;
+    flex-shrink: 0;
     border-radius: 50%; /* Opzionale: li rende tondi */
     background: #fff;   /* Opzionale: dà uno sfondo bianco se il logo è scuro */
 }
@@ -326,8 +328,8 @@ table tbody td:nth-child(3) {
 
 /* Logo medio per la card squadra */
 .logo-squadra-card {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
 }
 
