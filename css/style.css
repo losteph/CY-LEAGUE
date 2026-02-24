@@ -250,12 +250,28 @@ table tbody td:nth-child(3) {
     padding-bottom: 10px;
 }
 
+
 .logo-img {
-    max-height: 45px; /* Regola l'altezza come preferisci */
+    max-height: 80px; /* Aumentato per sostituire degnamente il titolo */
     width: auto;
     object-fit: contain;
-    border-radius: 50%; /* Rende il logo circolare se l'immagine è quadrata */
+    display: block;
+    margin: 0 auto; /* Lo centra perfettamente */
 }
+
+.header-content {
+    padding: 10px 0; /* Riduce lo spazio verticale ora che non c'è il testo */
+    display: block;  /* Cambiato da flex a block per centratura semplice */
+    text-align: center;
+}
+/*
+.logo-img {
+    max-height: 45px; // Regola l'altezza come preferisci 
+    width: auto;
+    object-fit: contain;
+    border-radius: 50%; // Rende il logo circolare se l'immagine è quadrata 
+} 
+*/ 
 
 @media (max-width: 600px) {
     .header-content {
