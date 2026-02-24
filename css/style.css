@@ -252,15 +252,14 @@ table tbody td:nth-child(3) {
 
 
 .logo-img {
-    max-height: 32x; /* Aumentato per sostituire degnamente il titolo */
-    width: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto; /* Lo centra perfettamente */
+    max-height: 70px !important;
+    width: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
 }
 
 .header-content {
-    padding: 10px 0; /* Riduce lo spazio verticale ora che non c'è il testo */
+    padding: 5px 0; /* Riduce lo spazio verticale ora che non c'è il testo */
     display: block;  /* Cambiato da flex a block per centratura semplice */
     text-align: center;
 }
