@@ -15,7 +15,8 @@ async function caricaClassificaAutomatica() {
         squadreData.forEach(squadra => {
             classifica[squadra.nome] = {
                 punti: 0, giocate: 0, vittorie: 0, pareggi: 0, sconfitte: 0,
-                gf: 0, gs: 0, dr: 0
+                gf: 0, gs: 0, dr: 0, 
+                logo: squadra.logo // Salviamo il logo qui per usarlo dopo
             };
         });
 
@@ -60,41 +61,32 @@ async function caricaClassificaAutomatica() {
     }
 });
 
-        const classificaArray = Object.keys(classifica).map(nomeSquadra => {
-            const stats = classifica[nomeSquadra];
-            stats.dr = stats.gf - stats.gs;
-            stats.squadra = nomeSquadra;
-            return stats;
-        });
-
-        classificaArray.sort((a, b) => {
-            if (a.punti !== b.punti) return b.punti - a.punti;
-            if (a.dr !== b.dr) return b.dr - a.dr;
-            return b.gf - a.gf;
-        });
+        // Trasformazione in array e ordinamento
+        const classificaArray = Object.keys(classifica).map(nome => ({ squadra: nome, ...classifica[nome] }));
+        classificaArray.sort((a, b) => b.punti - a.punti || b.dr - a.dr);
 
         const tbody = document.getElementById('corpo-classifica');
         tbody.innerHTML = ''; 
-
-        classificaArray.forEach((squadra, index) => {
-            const riga = `
+        classificaArray.forEach((s, index) => {
+            tbody.innerHTML += `
                 <tr>
                     <td>${index + 1}</td>
-                    <td>${squadra.squadra}</td>
-                    <td><strong>${squadra.punti}</strong></td>
-                    <td>${squadra.giocate}</td>
-                    <td>${squadra.vittorie}</td>
-                    <td>${squadra.pareggi}</td>
-                    <td>${squadra.sconfitte}</td>
-                    <td>${squadra.gf}</td>
-                    <td>${squadra.gs}</td>
-                    <td>${squadra.dr}</td>
+                    <td>
+                        <div class="tabella-squadra-logo">
+                            <img src="${s.logo}" class="mini-logo">
+                            <span>${s.squadra}</span>
+                        </div>
+                    </td>
+                    <td><strong>${s.punti}</strong></td>
+                    <td>${s.giocate}</td>
+                    <td>${s.vittorie}</td>
+                    <td>${s.pareggi}</td>
+                    <td>${s.sconfitte}</td>
+                    <td>${s.gf}</td>
+                    <td>${s.gs}</td>
+                    <td>${s.dr}</td>
                 </tr>
             `;
-            tbody.innerHTML += riga;
         });
-    } catch (error) {
-        console.error("Errore nel caricamento della classifica:", error);
-        document.getElementById('corpo-classifica').innerHTML = '<tr><td colspan="10">Errore nel caricamento dati.</td></tr>';
-    }
+    } catch (e) { console.error(e); }
 }
