@@ -17,6 +17,7 @@
   {
     "nome": "I Trogloditi",
     "presidente": "Jonathan Cuccaro",
+    "presidente": "Pierantonio Sasso",
     "logo": "img/logo.jpeg",
     "rosa": [
       { "nome": "Alessandro Ferrari", "ruolo": "Portiere" },
@@ -60,8 +61,8 @@
     ]
   },
   {
-    "nome": "I Pomodorini",
-    "presidente": "Pierantonio Sasso",
+    "nome": "Spinnings",
+    "presidente": "Dudi Di Ruberto",
     "logo": "img/logo.jpeg",
     "rosa": [
       { "nome": "Francesco Caputo", "ruolo": "Portiere" },
@@ -75,8 +76,8 @@
     ]
   },
   {
-    "nome": "Imp",
-    "presidente": "Gianni G",
+    "nome": "Imperial Seven",
+    "presidente": "Michele Calderoni",
     "logo": "img/logo.jpeg",
     "rosa": [
       { "nome": "Federico Marchetti", "ruolo": "Portiere" },
