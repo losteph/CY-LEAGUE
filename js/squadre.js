@@ -9,19 +9,29 @@ async function caricaSquadre() {
     container.innerHTML = '';
 
     squadre.forEach(s => {
-        let giocatori = '<ul>' + s.rosa.map(g => `<li>${g.nome} <em>(${g.ruolo})</em></li>`).join('') + '</ul>';
-        container.innerHTML += `
-            <div class="squadra-card">
-                <div class="squadra-header-logo">
-                    <img src="${s.logo}" class="logo-squadra-card">
-                    <h3>${s.nome}</h3>
-                </div>
-                <div class="presidente-box">
-                    <span class="label-presidente">Presidente:</span>
-                    <span class="nome-presidente">${s.presidente}</span>
-                </div>
-                ${giocatori}
+    let giocatori = '<ul>' + s.rosa.map(g => `<li>${g.nome} <em>(${g.ruolo})</em></li>`).join('') + '</ul>';
+    
+    container.innerHTML += `
+        <div class="squadra-card">
+            <div class="squadra-header-logo">
+                <img src="${s.logo}" class="logo-squadra-card">
+                <h3>${s.nome}</h3>
             </div>
-        `;
-    });
+            
+            <div class="dirigenza-box">
+                <div class="ruolo-riga">
+                    <span class="label-ruolo">Presidente:</span>
+                    <span class="nome-ruolo">${s.presidente || 'N.D.'}</span>
+                </div>
+                <div class="ruolo-riga">
+                    <span class="label-ruolo">Vice:</span>
+                    <span class="nome-ruolo">${s.vicepresidente || 'N.D.'}</span>
+                </div>
+            </div>
+            
+            <div class="rosa-header">Rosa Giocatori</div>
+            ${giocatori}
+        </div>
+    `;
+});
 }
