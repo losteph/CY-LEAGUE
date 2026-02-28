@@ -18,7 +18,7 @@
     "nome": "I Trogloditi",
     "presidente": "Jonathan Cuccaro",
     "vicepresidente": "Pierantonio Sasso",
-    "logo": "img/Trogloditi.jpeg",
+    "logo": "img/Trogloditi.png",
     "rosa": [
       { "nome": "Alessandro Ferrari", "ruolo": "Portiere" },
       { "nome": "Stefano Conti", "ruolo": "Difensore" },
@@ -33,7 +33,7 @@
   {
     "nome": "Sangu FC",
     "presidente": "Gabriele Lanza",
-    "logo": "img/sanguFC.jpeg",
+    "logo": "img/sanguFC.png",
     "rosa": [
       { "nome": "Daniele Leone", "ruolo": "Portiere" },
       { "nome": "Lorenzo Martino", "ruolo": "Difensore" },
