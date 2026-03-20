@@ -2,8 +2,8 @@
   {
   "giornata": 1,
   "fase": "regolare",
-  "squadraCasa": "Wild Boys",
-  "squadraOspite": "Imperial Seven",
+  "squadraCasa": "Real MyDrip",
+  "squadraOspite": "Sangu FC",
   "golCasa": null,
   "golOspite": null,
   "status": "da giocare",
@@ -24,8 +24,8 @@
   {
     "giornata": 1,
     "fase": "regolare",
-    "squadraCasa": "Real MyDrip",
-    "squadraOspite": "Sangu FC",
+    "squadraCasa": "Wild Boys",
+    "squadraOspite": "Imperial Seven",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
