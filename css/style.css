@@ -313,6 +313,24 @@ table tbody td:nth-child(3) {
     flex-shrink: 0;
 }
 
+.match-campo {
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #0a2f5c; /* Colore blu scuro come l'header */
+    margin-bottom: 3px;
+    text-transform: uppercase;
+}
+
+/* Assicuriamoci che la colonna di destra allinei tutto bene */
+.match-datetime {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Allinea tutto a destra */
+    justify-content: center;
+    min-width: 120px;
+    border-left: 1px solid #eee;
+    padding-left: 15px;
+}
 
 /* Container per logo + nome nelle tabelle */
 .tabella-squadra-logo {
