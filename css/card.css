@@ -1,0 +1,49 @@
+/* Il contenitore del Pop-up */
+.modal-overlay {
+    display: none; /* Si attiva con JS */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* La Figurina vera e propria */
+.panini-card {
+    background: #fff;
+    width: 280px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid #ccc;
+}
+
+/* Cornice interna della foto */
+.card-photo {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    background: #eee;
+    overflow: hidden;
+    border: 2px solid #333;
+}
+
+.card-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Adatta la foto alla cornice senza deformarla */
+}
+
+/* Area dei dati (Nome e Stats) */
+.card-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #d21f1f; /* Un rosso classico stile Young Cup */
+}
