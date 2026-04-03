@@ -7,13 +7,13 @@
   },
   {
     "nome": "Marco Accetta",
-    "soprannome": "ACCETTA",
+    "soprannome": "",
     "numero": 45,
     "foto": "assets/img/giocatori/bianchi.jpg"
   },
   {
   "nome": "Mauro Origlia",
-  "soprannome": "ORIGLIA",
+  "soprannome": "",
   "numero": 10,
   "foto": "asset/origlia.jpeg"
   },
@@ -31,49 +31,49 @@
   },
   {
   "nome": "Mario Mezzina",
-  "soprannome": "MEZZINA",
+  "soprannome": "",
   "numero": 29,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Alessandro Solazzo",
-  "soprannome": "SOLAZZO",
+  "soprannome": "",
   "numero": 8,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Giovanni Meuli",
-  "soprannome": "MEULI",
+  "soprannome": "",
   "numero": 5,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Manuel Flores",
-  "soprannome": "FLORES",
+  "soprannome": "",
   "numero": 11,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Alessandro Guerra",
-  "soprannome": "A.GUERRA",
+  "soprannome": "",
   "numero": 1,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Mario Rizzo",
-  "soprannome": "RIZZO",
+  "soprannome": "",
   "numero": 6,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Fabiano Tafaro",
-  "soprannome": "TAFARO",
+  "soprannome": "",
   "numero": 11,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Gabriele Ferrandino",
-  "soprannome": "FERRANDINO",
+  "soprannome": "",
   "numero": 2,
   "foto": "asset/a.jpeg"
   },
@@ -97,19 +97,19 @@
   },
   {
   "nome": "Flavio Carbone",
-  "soprannome": "CARBONE",
+  "soprannome": "",
   "numero": 10,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Antonio Fuzio",
-  "soprannome": "FUZIO",
+  "soprannome": "",
   "numero": 69,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Pierluigi De Marco",
-  "soprannome": "DE MARCO",
+  "soprannome": "",
   "numero": 1,
   "foto": "asset/a.jpeg"
   },
@@ -127,19 +127,19 @@
   },
   {
   "nome": "Andrea Fundone",
-  "soprannome": "FUNDONE",
+  "soprannome": "",
   "numero": 69,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Luigi Vaira",
-  "soprannome": "VAIRA",
+  "soprannome": "",
   "numero": 24,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Lorenzo Milfa",
-  "soprannome": "MILFA",
+  "soprannome": "",
   "numero": 10,
   "foto": "asset/a.jpeg"
   },
@@ -157,19 +157,19 @@
   },
   {
   "nome": "Alessandro del Giudice",
-  "soprannome": "DEL GIUDICE",
+  "soprannome": "",
   "numero": 17,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Carlo Basile",
-  "soprannome": "BASILE",
+  "soprannome": "",
   "numero": 27,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Gabriele Maci",
-  "soprannome": "MACI",
+  "soprannome": "",
   "numero": "00",
   "foto": "asset/a.jpeg"
   },
@@ -223,19 +223,19 @@
   },
   {
   "nome": "Matia Shehu",
-  "soprannome": "SHEHU",
+  "soprannome": "",
   "numero": 13,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Luca Padovano",
-  "soprannome": "PADOVANO",
+  "soprannome": "",
   "numero": 7,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Francesco Albanese",
-  "soprannome": "ALBANESE",
+  "soprannome": "",
   "numero": 20,
   "foto": "asset/a.jpeg"
   },
@@ -247,43 +247,43 @@
   },
   {
   "nome": "Stefano Vidali",
-  "soprannome": "VIDALI",
+  "soprannome": "",
   "numero": 2,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Gianluca Chiappinelli",
-  "soprannome": "CHIAPPINELLI",
+  "soprannome": "",
   "numero": 10,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Marco Amodio",
-  "soprannome": "AMODIO",
+  "soprannome": "",
   "numero": 11,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Raffaele Guerra",
-  "soprannome": "GUERRA",
+  "soprannome": "",
   "numero": 9,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Andrea Capuzzolo",
-  "soprannome": "CAPUZZOLO",
+  "soprannome": "",
   "numero": 90,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Mattia Mavelli",
-  "soprannome": "MAVELLI",
+  "soprannome": "",
   "numero": 22,
   "foto": "asset/a.jpeg"
   },
   {
   "nome": "Pasquale Iannelli",
-  "soprannome": "IANNELLI",
+  "soprannome": "",
   "numero": 1,
   "foto": "asset/a.jpeg"
   },
@@ -301,7 +301,7 @@
   },
   {
   "nome": "Giovanni Corso",
-  "soprannome": "Corso",
+  "soprannome": "",
   "numero": 3,
   "foto": "asset/a.jpeg"
   },
@@ -313,7 +313,7 @@
   },
   {
   "nome": "Mattia Ieva",
-  "soprannome": "IEVA",
+  "soprannome": "",
   "numero": 21,
   "foto": "asset/a.jpeg"
   },
@@ -325,7 +325,7 @@
   },
   {
   "nome": "Angelo Anatilopan",
-  "soprannome": "ANATILOPAN",
+  "soprannome": "",
   "numero": 9,
   "foto": "asset/a.jpeg"
   },
@@ -337,7 +337,7 @@
   },
   {
   "nome": "Mattia Pandolfi",
-  "soprannome": "PANDOLFI",
+  "soprannome": "",
   "numero": 11,
   "foto": "assets/img/giocatori/rossi.jpg"
   }
