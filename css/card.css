@@ -1,49 +1,64 @@
-/* Il contenitore del Pop-up */
-.modal-overlay {
-    display: none; /* Si attiva con JS */
+/* Sfondo oscurato quando apri la card */
+#player-modal {
+    display: none;
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    z-index: 1000;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: 10000;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-/* La Figurina vera e propria */
+/* La Figurina */
 .panini-card {
-    background: #fff;
-    width: 280px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    border: 1px solid #ccc;
+    width: 300px;
+    background: white;
+    padding: 15px;
+    border-radius: 2px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    cursor: default;
 }
 
-/* Cornice interna della foto */
-.card-photo {
-    width: 100%;
-    aspect-ratio: 3 / 4;
-    background: #eee;
+.card-frame {
+    position: relative;
+    border: 2px solid #222;
+    aspect-ratio: 3/4;
     overflow: hidden;
-    border: 2px solid #333;
+    background: #f0f0f0;
 }
 
-.card-photo img {
+.card-frame img#modal-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Adatta la foto alla cornice senza deformarla */
+    object-fit: cover;
 }
 
-/* Area dei dati (Nome e Stats) */
-.card-info {
-    text-align: center;
-    margin-top: 10px;
+/* Logo Squadra automatico in alto a sinistra */
+.card-logo {
+    position: absolute;
+    top: 10px; left: 10px;
+    width: 50px; height: 50px;
+    filter: drop-shadow(0 0 2px white);
 }
 
-.card-name {
-    font-size: 1.5rem;
+/* Numero in alto a destra */
+.card-number {
+    position: absolute;
+    top: 10px; right: 10px;
+    background: #e31e24; /* Rosso Young Cup */
+    color: white;
     font-weight: bold;
+    padding: 5px 10px;
+    border: 1.5px solid white;
+}
+
+/* Nome e info in basso */
+.card-footer {
+    margin-top: 15px;
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 10px;
     text-transform: uppercase;
-    color: #d21f1f; /* Un rosso classico stile Young Cup */
 }
