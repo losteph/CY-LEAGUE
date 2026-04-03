@@ -26,8 +26,7 @@ async function caricaTutto() {
             // Altrimenti, lasciamo il nome semplice
             if (infoExtra) {
                 return `<li>
-                    <span class="player-link" style="cursor:pointer; color:#d21f1f; font-weight:bold; text-decoration:underline;" 
-                        onclick="apriFigurina('${infoExtra.nome}', '${infoExtra.numero}', '${infoExtra.foto}', '${s.logo}', '${s.nome}', '${infoExtra.soprannome}')">
+                    <span class="player-link" onclick="apriFigurina('${infoExtra.nome}', '${infoExtra.numero}', '${infoExtra.foto}', '${s.logo}', '${s.nome}', '${infoExtra.soprannome}')">
                         ${g.nome}
                     </span> 
                     <em>(${g.ruolo})</em>
@@ -36,6 +35,8 @@ async function caricaTutto() {
                 return `<li>${g.nome} <em>(${g.ruolo})</em></li>`;
             }
         }).join('') + '</ul>';
+
+        
 
         // Logica Dirigenza (Presidenti)
         let dirigenzaHtml = "";
