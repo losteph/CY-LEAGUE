@@ -60,22 +60,38 @@ async function caricaTutto() {
         console.error("Errore nel caricamento dati:", error);
         document.getElementById('elenco-squadre').innerHTML = "Errore nel caricamento delle squadre. Controlla i file JSON.";
     }
-} // <--- Questa chiusura mancava!
+} 
 
 function apriFigurina(nome, numero, foto, logoSquadra, nomeSquadra, soprannome, ruolo) {
     const modal = document.getElementById('player-modal');
-    const imgCont = document.getElementById('modal-img');
     const numCont = document.getElementById('modal-number');
     
-    imgCont.src = (foto && foto !== "") ? foto : "assets/img/default.png";
-    
+    // --- FORZA BRUTA JS: Blocchiamo la striscia qui ---
+    numCont.style.all = "unset"; // Reset totale
+    numCont.style.position = "absolute";
+    numCont.style.top = "5px";
+    numCont.style.right = "5px";
+    numCont.style.width = "60px";
+    numCont.style.height = "60px";
+    numCont.style.display = "flex";
+    numCont.style.justifyContent = "center";
+    numCont.style.alignItems = "center";
+    numCont.style.zIndex = "100";
+    numCont.style.fontWeight = "900";
+    numCont.style.fontSize = "1.4rem";
+    numCont.style.fontFamily = "sans-serif";
+    // Applichiamo la sagoma maglietta via JS
+    numCont.style.clipPath = "polygon(25% 0%, 75% 0%, 100% 20%, 85% 35%, 85% 100%, 15% 100%, 15% 35%, 0% 20%)";
+    numCont.style.webkitClipPath = "polygon(25% 0%, 75% 0%, 100% 20%, 85% 35%, 85% 100%, 15% 100%, 15% 35%, 0% 20%)";
+
+    // --- COLORI SQUADRE ---
     const coloriSquadre = {
-        "Real MyDrip":      { fondo: "#ccff00", testo: "#000000" },
-        "I Trogloditi":     { fondo: "#40e0d0", testo: "#ffffff" },
-        "Sangu FC":         { fondo: "#000000", testo: "#ff0000" },
-        "Marlboro Goal":    { fondo: "#ff0000", testo: "#000000" },
-        "Wild Boys":        { fondo: "#ffffff", testo: "#d4af37" },
-        "Imperial Seven":   { fondo: "#008000", testo: "#000000" }
+        "Real MyDrip":      { fondo: "#ccff00", testo: "#000" },
+        "I Trogloditi":     { fondo: "#40e0d0", testo: "#fff" },
+        "Sangu FC":         { fondo: "#000", testo: "#f00" },
+        "Marlboro Goal":    { fondo: "#f00", testo: "#000" },
+        "Wild Boys":        { fondo: "#fff", testo: "#d4af37" },
+        "Imperial Seven":   { fondo: "#008000", testo: "#000" }
     };
 
     const colori = coloriSquadre[nomeSquadra] || { fondo: "#333", testo: "#fff" };
@@ -83,11 +99,11 @@ function apriFigurina(nome, numero, foto, logoSquadra, nomeSquadra, soprannome, 
     numCont.style.color = colori.testo;
     numCont.innerText = numero || "-";
 
+    // --- RIEMPIMENTO ALTRI DATI ---
+    document.getElementById('modal-img').src = (foto && foto !== "") ? foto : "assets/img/default.png";
     document.getElementById('modal-name').innerText = nome;
     document.getElementById('modal-logo').src = logoSquadra;
     document.getElementById('modal-team').innerText = nomeSquadra;
-    
-    // Inseriamo il Ruolo
     document.getElementById('modal-role').innerText = ruolo || "";
 
     const nick = document.getElementById('modal-nickname');
