@@ -485,9 +485,13 @@ table tbody td:nth-child(3) {
         flex-direction: row !important; /* Logo a sinistra, nome a destra per tutti */
     }
     
-    .team-casa, .team-ospite {
-        justify-content: center !important;
-        text-align: center !important;
+    .team-casa {
+    justify-content: flex-start !important; /* Allinea il contenuto del flex a sinistra */
+    text-align: left !important;            /* Allinea il testo a sinistra */
+    }
+    .team-ospite {
+    justify-content: flex-end !important;   /* Allinea il contenuto del flex a destra */
+    text-align: right !important;           /* Allinea il testo a destra */
     }
 
     .match-risultato {
