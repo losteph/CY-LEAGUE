@@ -7,39 +7,55 @@
     <title>Classifica Fantacalcio - Young League</title>
     <link rel="stylesheet" href="css/style.css">
     
-    <style>
-        .fanta-container { max-width: 1000px; margin: 40px auto; background: #fff; border-radius: 12px; box-shadow: 0 4px 25px rgba(0,0,0,0.1); overflow: hidden; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .fanta-title { text-align: center; padding: 25px; color: #1a1a1a; background: #fdfdfd; border-bottom: 2px solid #f0f0f0; text-transform: uppercase; letter-spacing: 1px; }
+<style>
+    /* Container principale */
+    .fanta-container { 
+        max-width: 1000px; margin: 20px auto; background: #fff; 
+        border-radius: 12px; box-shadow: 0 4px 25px rgba(0,0,0,0.1); 
+        overflow: hidden; font-family: 'Segoe UI', system-ui, sans-serif; 
+    }
 
-        ol.fanta-list { list-style: none; padding: 0; margin: 0; }
-        .fanta-item { display: flex; align-items: center; padding: 20px 30px; border-bottom: 1px solid #f0f0f0; transition: 0.2s; }
-        .fanta-item:hover { background: #f9f9f9; }
+    /* IL BINARIO PER LO SCORRIMENTO */
+    .fanta-scroll-wrapper {
+        width: 100%;
+        overflow-x: auto; 
+        -webkit-overflow-scrolling: touch;
+    }
 
-        .pos { font-weight: 800; font-size: 1.6em; min-width: 60px; text-align: center; color: #333; }
-        .info { flex-grow: 1; padding-left: 10px; }
-        .nick { font-weight: 800; color: #000; font-size: 1.3em; line-height: 1.1; }
-        .coach { font-size: 0.9em; color: #666; font-weight: 400; margin-top: 2px; display: block; }
-
-        .badge-giornata { display: inline-block; background: #ececec; color: #444; font-size: 0.75em; padding: 4px 10px; border-radius: 6px; font-weight: 700; margin-top: 8px; }
-
-        .scores-container { display: flex; gap: 20px; align-items: center; text-align: center; }
-        .score-box { min-width: 100px; }
-
-        .pts-f1-total { font-weight: 900; font-size: 1.8em; color: #e63946; display: block; line-height: 1; }
-        .label-f1 { font-size: 0.65em; color: #999; text-transform: uppercase; font-weight: 700; }
-
-        .pts-real-total { font-weight: 900; font-size: 1.8em; color: #007bff; display: block; line-height: 1; }
-        .label-real { font-size: 0.65em; color: #999; text-transform: uppercase; font-weight: 700; }
-
-        /* Stile Leggenda */
-        .fanta-legend { background: #fdfdfd; padding: 30px; border-top: 4px solid #f0f0f0; }
-        .fanta-legend h3 { margin-top: 0; border-bottom: 1px solid #eee; padding-bottom: 10px; font-size: 1.1em; color: #333; }
-        .legend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em; color: #555; line-height: 1.6; }
-        .legend-item b { color: #000; }
-
-        footer.fanta-footer { text-align: center; padding: 30px; font-size: 0.85em; color: #999; background: #fafafa; }
-    </style>
+    .fanta-title { text-align: center; padding: 25px; color: #1a1a1a; background: #fdfdfd; border-bottom: 2px solid #f0f0f0; text-transform: uppercase; letter-spacing: 1px; margin: 0; }
     
+    /* Forza la larghezza per non far schiacciare i dati */
+    ol.fanta-list { list-style: none; padding: 0; margin: 0; min-width: 700px; }
+    .fanta-item { display: flex; align-items: center; padding: 15px 30px; border-bottom: 1px solid #f0f0f0; transition: 0.2s; }
+    .fanta-item:hover { background: #f9f9f9; }
+    
+    .pos { font-weight: 800; font-size: 1.5em; min-width: 60px; text-align: center; color: #333; }
+    .info { flex-grow: 1; padding-left: 10px; }
+    .nick { font-weight: 800; color: #000; font-size: 1.3em; line-height: 1.1; }
+    .coach { font-size: 0.9em; color: #666; font-weight: 400; margin-top: 2px; display: block; }
+    
+    .badge-giornata { display: inline-block; background: #ececec; color: #444; font-size: 0.75em; padding: 4px 10px; border-radius: 6px; font-weight: 700; margin-top: 8px; white-space: nowrap; }
+    
+    .scores-container { display: flex; gap: 20px; align-items: center; text-align: center; margin-left: 20px; }
+    .score-box { min-width: 100px; }
+    
+    .pts-f1-total { font-weight: 900; font-size: 1.8em; color: #e63946; display: block; line-height: 1; }
+    .label-f1 { font-size: 0.65em; color: #999; text-transform: uppercase; font-weight: 700; }
+    
+    .pts-real-total { font-weight: 900; font-size: 1.8em; color: #007bff; display: block; line-height: 1; }
+    .label-real { font-size: 0.65em; color: #999; text-transform: uppercase; font-weight: 700; }
+
+    .fanta-legend { background: #fdfdfd; padding: 30px; border-top: 4px solid #f0f0f0; min-width: 700px; }
+    .legend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.85em; color: #555; }
+    
+    /* Estetica del cursore (barra di scorrimento) */
+    .fanta-scroll-wrapper::-webkit-scrollbar { height: 8px; }
+    .fanta-scroll-wrapper::-webkit-scrollbar-track { background: #f1f1f1; }
+    .fanta-scroll-wrapper::-webkit-scrollbar-thumb { background: #ccc; border-radius: 10px; }
+
+    footer.fanta-footer { text-align: center; padding: 30px; font-size: 0.85em; color: #999; background: #fafafa; }
+</style>
+
 </head>
 <body>
     <header>
@@ -58,8 +74,10 @@
     <main>
         <div class="fanta-container">
             <h2 class="fanta-title">⚽ Classifica Generale</h2>
-            <ol class="fanta-list">
-                
+            
+            <div class="fanta-scroll-wrapper">
+                <ol class="fanta-list">
+                    
             <li class="fanta-item">
                 <span class="pos">🥇</span>
                 <div class="info">
@@ -1005,8 +1023,8 @@
                 </div>
             </li>
         
-            </ol>
-            
+                </ol>
+                
     <div class="fanta-legend">
         <h3>ℹ️ Regolamento di Punteggio</h3>
         <div class="legend-grid">
@@ -1014,7 +1032,8 @@
                 <b>Assegnazione Punti F1:</b><br>
                 1°: 100 pt | 2°: 85 pt | 3°: 75 pt | 4°: 65 pt<br>
                 5°: 55 pt | 6°: 45 pt | 7°: 40 pt | 8°: 35 pt<br>
-                9°: 30 pt | 10°: 25 pt | 11-20°: da 20 a 6pt | 21-40° da 5 a 1 pt
+                9°: 30 pt | 10°: 25 pt | 11-20°: da 20 a 6pt<br>
+                21-40° da 5 a 1 pt
             </div>
             <div class="legend-item">
                 <b>Ex-Aequo di Giornata:</b> In caso di pari merito nel punteggio reale, i punti F1 delle posizioni occupate vengono sommati e divisi equamente tra i partecipanti.<br>
@@ -1023,11 +1042,12 @@
         </div>
     </div>
     
-        </div>
+            </div>
+            </div>
     </main>
 
     <footer class="fanta-footer">
-        Aggiornato al: 11/04/2026 17:22:15
+        Aggiornato al: 11/04/2026 17:51:17
     </footer>
 </body>
 </html>
