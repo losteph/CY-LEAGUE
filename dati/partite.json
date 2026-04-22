@@ -35,8 +35,8 @@
   {
     "giornata": 2,
     "fase": "regolare",
-    "squadraCasa": "Imperial Seven",
-    "squadraOspite": "Sangu FC",
+    "squadraCasa": "Wild Boys",
+    "squadraOspite": "I Trogloditi",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
@@ -57,8 +57,8 @@
   {
     "giornata": 2,
     "fase": "regolare",
-    "squadraCasa": "Wild Boys",
-    "squadraOspite": "I Trogloditi",
+    "squadraCasa": "Imperial Seven",
+    "squadraOspite": "Sangu FC",
     "golCasa": null,
     "golOspite": null,
     "status": "da giocare",
