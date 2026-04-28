@@ -46,11 +46,15 @@ async function caricaPartite() {
                 ? `${partita.golCasa} - ${partita.golOspite}` 
                 : 'vs';
 
+
             let infoExtraShootout = "";
             if (partita.status === 'giocata' && partita.golCasa === partita.golOspite && partita.vincitoreShootout) {
+            // Se c'è lo score dei rigori lo mettiamo tra parentesi, altrimenti stringa vuota
+                const punteggioRigori = partita.scoreShootout ? ` (${partita.scoreShootout})` : "";
+    
                 infoExtraShootout = `
                     <div class="shootout-info">
-                        🏆 Shootout: ${partita.vincitoreShootout}
+                        🏆 Shootout: <strong>${partita.vincitoreShootout}</strong>${punteggioRigori}
                     </div>
                 `;
             }
