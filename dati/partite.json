@@ -80,17 +80,6 @@
   {
     "giornata": 3,
     "fase": "regolare",
-    "squadraCasa": "Wild Boys",
-    "squadraOspite": "Real MyDrip",
-    "golCasa": null,
-    "golOspite": null,
-    "status": "da giocare",
-    "vincitoreShootout": null,
-    "data": "12/05", "ora": "21:20", "campo": "Cofit Club"
-  },
-  {
-    "giornata": 3,
-    "fase": "regolare",
     "squadraCasa": "Sangu FC",
     "squadraOspite": "Marlboro Goal",
     "golCasa": null,
@@ -98,6 +87,17 @@
     "status": "da giocare",
     "vincitoreShootout": null,
     "data": "12/05", "ora": "20:40", "campo": "Cofit Club"
+  },
+  {
+    "giornata": 3,
+    "fase": "regolare",
+    "squadraCasa": "Wild Boys",
+    "squadraOspite": "Real MyDrip",
+    "golCasa": null,
+    "golOspite": null,
+    "status": "da giocare",
+    "vincitoreShootout": null,
+    "data": "12/05", "ora": "21:20", "campo": "Cofit Club"
   },
   {
     "giornata": 4,
